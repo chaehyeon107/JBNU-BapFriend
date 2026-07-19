@@ -1,0 +1,530 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 40px 16px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.breadcrumbMuted {
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbSep {
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumbActive {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pageTitle {
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--color-text);
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.tabSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 40px 40px;
+}
+
+.tabHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabIndicatorGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tabPill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background: var(--color-text-tertiary);
+}
+
+.tabPillList {
+  background: var(--color-primary);
+}
+
+.tabPillRanking {
+  background: var(--color-text);
+}
+
+.tabPillInactive {
+  background: var(--color-bg-soft);
+  color: var(--color-text-secondary);
+}
+
+.tabHint {
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+}
+
+.newButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px rgba(255, 107, 53, 0.15);
+}
+
+.twoColumn {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.catalog {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.catalogTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.catalogList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.catalogItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  text-align: left;
+}
+
+.catalogItemMuted {
+  background: var(--color-bg-soft);
+  border-color: var(--color-bg-soft);
+}
+
+.catalogItemActive {
+  background: var(--color-primary-soft);
+  border: 1.5px solid var(--color-primary);
+}
+
+.catalogItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.catalogItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.catalogItemName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.catalogItemNameRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.catalogItemBadge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--color-bg-soft);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.catalogItemDesc {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.catalogItemDescAccent {
+  color: var(--color-primary);
+}
+
+.catalogItemCount {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.catalogItemCountAccent {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.detailPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.detailHeaderLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailTitle {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-text);
+}
+
+.detailBadge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--color-bg-soft);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.detailBadgeAccent {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.detailDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.shopList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shopItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  background: none;
+}
+
+.shopThumb {
+  width: 120px;
+  height: 90px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.shopInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.shopTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shopName {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.shopTag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-primary);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.shopRating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.shopAddress {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.shopMenu {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+.quickMapCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg-soft);
+}
+
+.quickMapText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.quickMapTitle {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.quickMapDesc {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.quickMapButton {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.addBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-soft);
+}
+
+.addBarInput {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: var(--color-text);
+  outline: none;
+}
+
+.addBarInput::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.addBarButton {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.rankList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rankItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.dragHandle {
+  color: var(--color-text-tertiary);
+  cursor: grab;
+  flex-shrink: 0;
+}
+
+.rankBadge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--color-bg-soft);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+.rankBadgeGold {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.rankThumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.rankInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rankName {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.rankDesc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.rankMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.rankMetaScore {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.rankMetaLocation {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}

@@ -1,0 +1,276 @@
+.mapCanvas {
+  position: relative;
+  flex: 1;
+  min-width: 700px;
+  height: 100%;
+  background: var(--color-map-bg);
+  overflow: hidden;
+}
+
+.campusBoundary {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  width: 600px;
+  height: 500px;
+  border: 2px solid var(--color-success);
+  border-radius: 24px;
+  background: var(--color-success-soft);
+}
+
+.campusLabel {
+  position: absolute;
+  left: 400px;
+  top: 240px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.landmarkLabel {
+  position: absolute;
+  font-weight: 600;
+  font-size: 12px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.roadH {
+  position: absolute;
+  left: 0;
+  top: 600px;
+  width: 100%;
+  height: 40px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.roadV {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.roadLabel {
+  position: absolute;
+  left: 340px;
+  top: 610px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 0;
+  transform: translate(-50%, -100%);
+}
+
+.pinBubble {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-primary);
+  box-shadow: var(--shadow-pin);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.pinBubbleSelected {
+  background: var(--color-primary);
+  border-color: var(--color-surface);
+  color: var(--color-text-inverse);
+}
+
+.pinArrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid var(--color-primary);
+}
+
+.pinArrowSelected {
+  border-top-color: var(--color-primary);
+}
+
+.selectedCard {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.categoryTag {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.cardAddress {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.bookmarkBtn {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.quickStats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.ratingRow svg {
+  color: #fbbf24;
+}
+
+.reviewCount {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.divider {
+  width: 1px;
+  height: 12px;
+  background: var(--color-border);
+}
+
+.openStatus {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-success);
+}
+
+.menuPhotoRow {
+  display: flex;
+  gap: 8px;
+}
+
+.menuPhoto {
+  width: 100px;
+  height: 70px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.menuInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-soft);
+}
+
+.menuInfoTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.menuName {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.menuPrice {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.menuDesc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.actionRow {
+  display: flex;
+  gap: 12px;
+}
+
+.actionBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btnCall {
+  background: var(--color-bg-soft);
+  color: var(--color-text);
+}
+
+.btnReview {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}

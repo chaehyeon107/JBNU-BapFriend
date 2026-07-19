@@ -1,0 +1,769 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 40px 20px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.breadcrumbMuted {
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbSep {
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumbActive {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pageTitle {
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--color-text);
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.mainBody {
+  display: flex;
+  gap: 24px;
+  padding: 40px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Left feed column */
+.leftColumn {
+  width: 440px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedTitleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.feedTitle {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.feedCount {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.filterPill {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.filterPillActive {
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  color: #fff;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardShopName {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.cardShopCategory {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
+.cardDate {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.starsRow {
+  display: flex;
+  gap: 2px;
+}
+
+.menuTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menuTag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--color-bg);
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.commentRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.commentText {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-text-secondary);
+}
+
+.commentThumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Right form column */
+.rightColumn {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stepIndicatorRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stepBadge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+.stepBadgeHint {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
+.formTitle {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.formSections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stepSection {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stepTitleArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+/* Step 1: shop search */
+.searchInputBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-primary);
+}
+
+.searchInputBox input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.searchClearBtn {
+  border: none;
+  background: none;
+  color: var(--color-text-tertiary);
+  flex-shrink: 0;
+}
+
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.resultRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resultThumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.resultInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.resultTitleLine {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resultName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.resultCategoryTag {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--color-text-secondary);
+}
+
+.resultAddress {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.selectBtn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.noShopHelper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  border-top: 1px solid var(--color-border);
+}
+
+.noShopText {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.noShopBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+/* Step 2: date + menu */
+.splitColumns {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.dateBox {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.boxLabel {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.miniCalendar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg);
+}
+
+.calendarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendarNavBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.calendarHeaderLabel {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.weekdaysRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekdayCell {
+  width: 28px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.weekdaySun {
+  color: var(--color-danger);
+}
+
+.weekdaySat {
+  color: #3b82f6;
+}
+
+.daysGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dayCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: none;
+  background: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.dayCellEmpty {
+  visibility: hidden;
+}
+
+.dayCellSelected {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.selectedDateLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+.menuBox {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menuOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menuOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  text-align: left;
+}
+
+.menuOptionChecked {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  flex-shrink: 0;
+}
+
+.checkboxChecked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.menuOptionLabel {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.menuOptionLabelChecked {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.addNewMenu {
+  display: flex;
+  gap: 8px;
+}
+
+.addNewMenu input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 13px;
+  outline: none;
+}
+
+.addMenuBtn {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-text);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* Step 3 */
+.starSelectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg);
+}
+
+.starSelectLabel {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.bigStars {
+  display: flex;
+  gap: 12px;
+}
+
+.bigStarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  padding: 2px;
+}
+
+.starScoreLabel {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+
+.textareaSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 120px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text);
+  resize: none;
+  outline: none;
+}
+
+.charCount {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.photoUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.photoRow {
+  display: flex;
+  gap: 12px;
+}
+
+.photoPreview {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-primary);
+  overflow: visible;
+}
+
+.photoPreviewImg {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  border: none;
+  color: #fff;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-tertiary);
+}
+
+.uploadPlaceholder span {
+  font-size: 11px;
+}
+
+/* Form actions */
+.formActions {
+  display: flex;
+  gap: 12px;
+}
+
+.cancelBtn {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.submitBtn {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+}

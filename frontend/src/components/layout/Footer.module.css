@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 48px 40px;
+  background: var(--color-text);
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brandName {
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  color: #fff;
+}

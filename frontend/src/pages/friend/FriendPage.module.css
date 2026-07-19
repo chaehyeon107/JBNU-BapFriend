@@ -1,0 +1,1030 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.mainBody {
+  display: flex;
+  gap: 24px;
+  padding: 32px 40px 64px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Left sidebar */
+.leftSidebar {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.myAvatar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.myAvatarImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.myNickRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.myNickname {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.myBadge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+.myBio {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.settingsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4a4e57;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 999px;
+  border: none;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.toggleOn {
+  background: var(--color-primary);
+}
+
+.toggleKnob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+  transition: transform 0.15s;
+}
+
+.toggleOn .toggleKnob {
+  transform: translateX(20px);
+}
+
+.friendListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.friendListTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.friendCount {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.manageLink {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 18px;
+  background: var(--color-bg);
+}
+
+.searchBox input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.searchBox input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friendRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.friendRowLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friendAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.friendName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.friendStatus {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.friendStatusOnline {
+  color: var(--color-success);
+}
+
+.applyBtn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: var(--color-primary-soft);
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+/* Center */
+.centerMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hubTabs {
+  display: flex;
+  gap: 4px;
+  height: 48px;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.hubTab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #4a4e57;
+}
+
+.hubTabActive {
+  background: var(--color-primary);
+  font-weight: 700;
+  color: #fff;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.saveBtn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+.profileForm {
+  display: flex;
+  gap: 24px;
+}
+
+.picEditor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.picEditorImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.picEditorLabel {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+}
+
+.inputs {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputLabel {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.tasteHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tasteSubtitle {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.slidersGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sliderRow {
+  display: flex;
+  gap: 24px;
+}
+
+.tasteSlider {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sliderTrack {
+  position: relative;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-border);
+}
+
+.sliderFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--color-primary);
+}
+
+.sliderKnob {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.dietaryRow {
+  display: flex;
+  gap: 24px;
+}
+
+.dietaryBlock {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dietaryLabel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4a4e57;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badgeRed {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #fee2e2;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-danger);
+}
+
+.badgeBlue {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #e0f2fe;
+  font-weight: 600;
+  font-size: 11px;
+  color: #3b82f6;
+}
+
+.rankItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.rankBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.rankLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+/* Footprint tab */
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.previewTitle {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.mapControls {
+  display: flex;
+  gap: 12px;
+}
+
+.smallToggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.smallToggleTrack {
+  position: relative;
+  width: 32px;
+  height: 16px;
+  border-radius: 999px;
+  border: none;
+  background: var(--color-border);
+}
+
+.smallToggleTrackOn {
+  background: var(--color-primary);
+}
+
+.smallToggleKnob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #fff;
+  transition: transform 0.15s;
+}
+
+.smallToggleTrackOn .smallToggleKnob {
+  transform: translateX(16px);
+}
+
+.mapCanvas {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--color-map-bg);
+  overflow: hidden;
+}
+
+.mapCampus {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  width: 450px;
+  height: 260px;
+  border: 2px solid var(--color-success);
+  border-radius: 24px;
+  background: var(--color-success-soft);
+}
+
+.mapLabel {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.mapLabelSmall {
+  position: absolute;
+  font-weight: 600;
+  font-size: 11px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.mapRoadH {
+  position: absolute;
+  left: 0;
+  top: 240px;
+  width: 100%;
+  height: 30px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mapRoadV {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mapRoadLabel {
+  position: absolute;
+  left: 240px;
+  top: 247px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.mapMarker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transform: translate(-50%, -100%);
+}
+
+.markerBubble {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  white-space: nowrap;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.markerPin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1.5px solid var(--color-primary);
+}
+
+.markerPinActive {
+  background: var(--color-primary);
+  border-color: #fff;
+  color: #fff;
+}
+
+.markerLabel {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  font-weight: 700;
+  font-size: 9px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.footprintManagement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addSectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.addSectionTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.addSectionDesc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.shopSearchBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+}
+
+.shopSearchBox input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.shopSearchBox input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.footprintList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footprintItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid var(--color-border);
+}
+
+.footprintRank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.footprintShopInfo {
+  width: 150px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footprintShopName {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.footprintShopCategory {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.footprintMsgBox {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.footprintMsgBox input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.footprintDeleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-tertiary);
+  flex-shrink: 0;
+}
+
+.footprintActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.footprintSecondaryBtn {
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-bg-soft);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.footprintPrimaryBtn {
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Right sidebar */
+.rightSidebar {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.apptCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.apptTabHeader {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.apptTab {
+  padding-bottom: 4px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text-tertiary);
+}
+
+.apptTabActive {
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.requestsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.requestCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg);
+}
+
+.requestHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.requestAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.requestName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.requestTime {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.requestDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.requestDetailRow {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.requestDetailKey {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+.requestDetailValue {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.requestDetailValueBold {
+  font-weight: 700;
+}
+
+.requestMessage {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.requestActions {
+  display: flex;
+  gap: 8px;
+}
+
+.rejectBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.acceptBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sentResponseItem {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--color-bg);
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.createApptFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fieldLabel {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4a4e57;
+}
+
+.fieldBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.fieldTextarea {
+  height: 60px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+}
+
+.submitApptBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}

@@ -1,0 +1,787 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 40px 20px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.breadcrumbMuted {
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbSep {
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumbActive {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pageTitle {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.importBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+.mainBody {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Side panel */
+.sidePanel {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+}
+
+.friendSummary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.friendAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.friendNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.friendName {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.friendLevelBadge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--color-primary);
+}
+
+.friendMeta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.bioBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.bioLabel {
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.bioText {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-text);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.slidersGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sliderBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sliderLabels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.sliderTrackWrap {
+  position: relative;
+  height: 16px;
+}
+
+.sliderTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-border);
+}
+
+.sliderFill {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+.sliderKnob {
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  transform: translateX(-50%);
+}
+
+.foodCultureRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.foodCultureRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.foodCultureKey {
+  width: 78px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.foodCultureKeyRed {
+  color: var(--color-danger);
+}
+
+.foodCultureKeyOrange {
+  color: var(--color-primary);
+}
+
+.foodCultureValue {
+  flex: 1;
+  min-width: 0;
+  color: var(--color-text-secondary);
+}
+
+.foodCultureValueStrong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.bestFoodBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.bestFoodTitle {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.bestFoodTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bestFoodTag {
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.rankingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rankingLink {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+}
+
+.rankList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rankItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.rankBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.rankBadgeMuted {
+  background: var(--color-bg-soft);
+  color: var(--color-text-secondary);
+}
+
+.rankInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rankTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rankName {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.rankCategory {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+}
+
+.rankComment {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Main content */
+.mainContent {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+.mapCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.mapCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mapCardTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mapCardDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+.mapCardTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.mapToggles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mapToggleItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.toggleTrack {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 999px;
+  border: none;
+  background: var(--color-primary);
+}
+
+.toggleKnob {
+  position: absolute;
+  top: 2px;
+  left: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.mapCanvas {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--color-map-bg);
+  overflow: hidden;
+}
+
+.mapCampus {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  width: 640px;
+  height: 360px;
+  border: 2px solid var(--color-success);
+  border-radius: 24px;
+  background: var(--color-success-soft);
+}
+
+.mapLabel {
+  position: absolute;
+  font-weight: 800;
+  font-size: 15px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.mapLabelSmall {
+  position: absolute;
+  font-weight: 600;
+  font-size: 12px;
+  color: #047857;
+  white-space: nowrap;
+}
+
+.mapRoadH {
+  position: absolute;
+  left: 0;
+  top: 380px;
+  width: 100%;
+  height: 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mapRoadV {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mapRoadLabel {
+  position: absolute;
+  left: 300px;
+  top: 390px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.mapMarker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transform: translate(-50%, -100%);
+}
+
+.mapBubble {
+  max-width: 180px;
+  padding: 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.markerPin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1.5px solid var(--color-primary);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.markerPinActive {
+  background: var(--color-primary);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Reviewed shop list */
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.reviewSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviewSectionTitleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewSectionTitle {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.reviewSectionDesc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.filterPills {
+  display: flex;
+  gap: 8px;
+}
+
+.filterPill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+  background: var(--color-bg-soft);
+  color: var(--color-text-secondary);
+}
+
+.filterPillActive {
+  background: var(--color-primary);
+  font-weight: 700;
+  color: #fff;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.reviewCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviewShopNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewShopName {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.reviewShopTag {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--color-primary-soft);
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--color-primary);
+}
+
+.reviewShopDistance {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
+.reviewOpenStatus {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-success);
+}
+
+.reviewRatingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviewRating {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.reviewRatingCount {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
+.commentBox {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-text);
+}
+
+.commentBoxBlue {
+  background: #f0f7ff;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.commentBoxRed {
+  background: #fff5f5;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.commentAuthorBlue {
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.commentAuthorRed {
+  font-weight: 700;
+  color: var(--color-danger);
+}
+
+.photoMenuRow {
+  display: flex;
+  gap: 12px;
+}
+
+.reviewPhoto {
+  width: 140px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.menuInfoBox {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.menuInfoTitle {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.menuRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.menuRowName {
+  color: var(--color-text-secondary);
+}
+
+.menuRowPrice {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.menuDividerLine {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.menuSubBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuSubLabel {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.menuSubText {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-text);
+}
+
+.eatenTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.eatenTag {
+  padding: 6px 10px;
+  border-radius: 16px;
+  background: var(--color-bg-soft);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,289 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.breadcrumbMuted {
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbSep {
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumbActive {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pageTitle {
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--color-text);
+  margin-top: 8px;
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+}
+
+.createBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 80px 80px;
+}
+
+.statsCard {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.statBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.statValue {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+.statValueAccent {
+  color: var(--color-primary);
+}
+
+.statValueMuted {
+  color: var(--color-text-tertiary);
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: var(--color-border);
+}
+
+.statHeartRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+}
+
+.cardSelected {
+  border: 2px solid rgba(255, 107, 53, 0.08);
+}
+
+.cardImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cardBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoryTag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+
+.categoryTagMuted {
+  background: var(--color-bg-soft);
+  color: var(--color-text-secondary);
+}
+
+.visibilityTag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+.visibilityTagMuted {
+  background: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.registeredDate {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+.cardTitle {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.cardStatsRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cardStatItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.cardStatHeart {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.toggleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggleTrack {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 999px;
+  border: none;
+  background: var(--color-primary);
+}
+
+.toggleTrackOff {
+  background: var(--color-border);
+}
+
+.toggleKnob {
+  position: absolute;
+  top: 2px;
+  left: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.toggleTrackOff .toggleKnob {
+  left: 2px;
+}
+
+.toggleLabel {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+.editBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: #fee2e2;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-danger);
+}

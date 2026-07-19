@@ -1,0 +1,374 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Profile section */
+.profileSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.userLeft {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.nickAndLevel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nickRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nickname {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+.levelTag {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.bio {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.userExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 380px;
+}
+
+.xpRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.xpLevel {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.xpValue {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.progressTrack {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--color-bg-soft);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 5px;
+  background: var(--color-primary);
+}
+
+.xpHint {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.editButton {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+/* Stats grid */
+.statsGrid {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1;
+  min-width: 0;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardLink {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+}
+
+.statsBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.statValue {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Badges */
+.badgesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 16px;
+}
+
+.badge {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.badgePending {
+  opacity: 0.6;
+}
+
+.badgeIconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badgeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.badgeName {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badgeDesc {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.badgeDate {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+}
+
+/* Book progress */
+.progressBarList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progressRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progressRowTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.progressRowLabel {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.progressRowValue {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.barTrack {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--color-bg-soft);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+/* Gourmet lists */
+.gourmetSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.listGrid {
+  display: flex;
+  gap: 24px;
+}
+
+.listCard {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.listCoverImg {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.listTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.listTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.listDesc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listTags {
+  display: flex;
+  gap: 4px;
+}
+
+.listTag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--color-bg-soft);
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.listCount {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
