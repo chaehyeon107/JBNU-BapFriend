@@ -1,0 +1,50 @@
+# 북대밥친구 로컬 개발용 MySQL + Redis
+# 같은 폴더의 .env 값을 자동으로 읽어서 사용합니다.
+#
+# 실행:  docker compose up -d
+# 종료:  docker compose down        (데이터 유지)
+# 초기화: docker compose down -v    (데이터 삭제)
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: bukdae-mysql
+    restart: unless-stopped
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      TZ: Asia/Seoul
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-time-zone=+09:00
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${DB_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: bukdae-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    # 로컬 개발용이라 비밀번호 없이 실행합니다.
+    # 비밀번호를 쓰려면 아래 command를 ["redis-server", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD}"] 로 바꾸세요.
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mysql-data:
+  redis-data:
